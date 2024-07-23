@@ -1,0 +1,135 @@
+/* styles.css */
+body {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background: #f9f9f9;
+    color: #333;
+    background: url('https://www.forkknifeswoon.com/wp-content/uploads/2013/12/20131208-OreoCookieBalls-TextWEB-04-605x908.jpg') no-repeat center center fixed;
+    background-size: cover; 
+}
+
+header {
+    background: linear-gradient(to right, #141313, #111111);
+    color: white;
+    padding: 20px;
+    font-family: 'Lobster', cursive;
+    border-bottom: 5px solid #030303;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #333;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    color: #ff7e5f;
+}
+
+#photos .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#photos .photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#photos .photo-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+#nutrition img {
+    
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .company-info {
+    text-align: left;
+    flex: 1;
+    margin: 10px;
+}
+
+footer .contact-form {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+}
+
+footer .contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contact-form input,
+footer .contact-form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer .contact-form button {
+    padding: 10px;
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .contact-form button:hover {
+    background: #feb47b;
+}
